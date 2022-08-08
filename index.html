@@ -1,0 +1,90 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/aaf3f170ea.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="card-main">
+      <div class="container">
+        <form class="searchBar" id="search-form">
+          <div class="row">
+            <div class="col-8">
+              <form id="search-form">
+                <input
+                  type="search"
+                  placeholder="Enter a city..."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </form>
+            </div>
+            <div class="col-4">
+              <input type="submit" value="Search" class="submit-btn" />
+              <button
+                type="submit"
+                id="current-location"
+                class="current-location-btn"
+                value="Current Location"
+              >
+                📍
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <br />
+      <form class="middle">
+        <h2 class="city" id="displayed-city"></h2>
+        <h4 id="current-time"></h4>
+        <div class="float-left">
+          <span class="degreelarge" id="temperature">24</span>
+          <span class="units">
+            <a href="#" id="celsius-link">°C</a> |
+            <a href="#" id="fahrenheit-link">°F</a>
+          </span>
+        </div>
+        <h3 class="discription">Mostly sunny</h3>
+        <h2 class="degree">24° | 14°</h2>
+      </form>
+      <br />
+      <div class="maincard-background">
+        <div class="inner-card">
+          <div class="day in-card">Monday</div>
+          <i class="fa-solid">🌥</i>
+          <div class="degreein in-card">28° | 17°</div>
+        </div>
+        <div class="inner-card">
+          <div class="day in-card">Tuesday</div>
+          <i class="fa-solid">🌤</i>
+          <div class="degreein in-card">28° | 17°</div>
+        </div>
+        <div class="inner-card">
+          <div class="day in-card">Wednesday</div>
+          <i class="fa-solid">🌤</i>
+          <div class="degreein in-card">32° | 19°</div>
+        </div>
+        <div class="inner-card">
+          <div class="day in-card">Thursday</div>
+          <i class="fa-solid">🌞</i>
+          <div class="degreein in-card">34° | 22°</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="src/javascript.js"></script>
+</html>
