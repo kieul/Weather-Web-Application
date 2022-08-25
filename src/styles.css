@@ -21,14 +21,6 @@ h4 {
   position: relative;
   top: -30px;
 }
-.discription {
-  font-size: 20px;
-  color: #272343;
-}
-.degree {
-  font-size: 25px;
-  color: #272343;
-}
 .container {
   display: block;
   background: #d4e6ee;
@@ -48,7 +40,6 @@ h4 {
   background-color: white;
   border: none;
   padding: 8px 15px;
-
   transition: all 200ms ease;
 }
 .submit-btn:hover {
@@ -80,6 +71,18 @@ h4 {
 }
 .middle:hover {
   background: #cae3ee;
+}
+#current-time {
+  font-size: 20px;
+}
+#description {
+  font-size: 20px;
+  color: #272343;
+  margin-bottom: 2px;
+}
+.degree {
+  font-size: 20px;
+  color: #272343;
 }
 .card-main {
   background: #dcecf3;
