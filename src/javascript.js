@@ -25,7 +25,10 @@ function showWeather(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].main;
 }
+
 function search(city) {
   let apiKey = "7fef5d169773c3ea2391e9aa3ffecb34";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
