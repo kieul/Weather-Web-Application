@@ -5,7 +5,7 @@ h2 {
   margin: 0;
 }
 h4 {
-  color: #272343;
+  color: #362e60;
   margin-bottom: 0;
 }
 .city {
@@ -77,12 +77,12 @@ h4 {
 }
 #description {
   font-size: 20px;
-  color: #272343;
+  color: #362e60;
   margin-bottom: 2px;
 }
 .degree {
   font-size: 20px;
-  color: #272343;
+  color: #362e60;
 }
 .card-main {
   background: #dcecf3;
@@ -157,4 +157,9 @@ h4 {
 }
 #search-button:hover {
   background: #e3f3fc;
+}
+.creator {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
