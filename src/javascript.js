@@ -25,6 +25,12 @@ function showWeather(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
+  document.querySelector("#maxTemperature").innerHTML = Math.round(
+    response.data.main.temp_max
+  );
+  document.querySelector("#minTemperature").innerHTML = Math.round(
+    response.data.main.temp_min
+  );
 
   celsiusTemperature = response.data.main.temp;
 }
