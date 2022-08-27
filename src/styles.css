@@ -121,8 +121,7 @@ a {
   margin-bottom: 2px;
   text-align: center;
 }
-.maincard-background {
-  display: flex;
+.maincard {
   justify-content: space-between;
   max-width: 600px;
   background-color: #d4e6ee;
@@ -132,19 +131,8 @@ a {
   text-align: center;
   transition: all 200ms ease;
 }
-.maincard-background:hover {
+.maincard:hover {
   background: #cae3ee;
-}
-.inner-card {
-  width: 130px;
-  height: 130px;
-  background-color: white;
-  border-radius: 10px;
-}
-.fa-solid {
-  color: #438fa2;
-  padding: 5px;
-  font-size: 40px;
 }
 .in-card {
   font-size: 17px;
@@ -155,6 +143,7 @@ a {
 .degreein {
   padding-top: 14px;
 }
+
 #search-button {
   max-width: 100px;
   margin: 0 auto;
