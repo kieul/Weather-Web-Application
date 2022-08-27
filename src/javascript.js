@@ -25,8 +25,8 @@ function showWeather(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
-  document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
+
+  celsiusTemperature = response.data.main.temp;
 }
 
 function search(city) {
@@ -55,13 +55,16 @@ function currentLocation(event) {
 function convertFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 75;
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 function convertCelsius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 24;
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
+
+let celsiusTemperature = null;
 
 let day = days[now.getDay()];
 
@@ -80,4 +83,4 @@ celsiusLink.addEventListener("click", convertCelsius);
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", searchCity);
 
-search("NeW York");
+search("New York");
