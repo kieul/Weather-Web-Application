@@ -13,14 +13,20 @@ h4 {
   color: #272343;
 }
 .degreelarge {
-  font-size: 60px;
+  font-size: 70px;
   color: #272343;
-  margin: 0;
+  margin-left: 20px;
 }
 .units {
   position: relative;
-  top: -30px;
+  top: -40px;
+  font-size: 20px;
 }
+a {
+  text-decoration: none;
+  color: #272343;
+}
+
 .container {
   display: block;
   background: #d4e6ee;
@@ -62,7 +68,6 @@ h4 {
 .middle {
   display: block;
   margin: 0 auto;
-  text-align: center;
   padding: 10px;
   background-color: #d4e6ee;
   border-radius: 10px;
@@ -73,15 +78,15 @@ h4 {
   background: #cae3ee;
 }
 #current-time {
-  font-size: 20px;
+  font-size: 16px;
 }
 #description {
-  font-size: 20px;
+  font-size: 16px;
   color: #362e60;
   margin-bottom: 2px;
 }
 .degree {
-  font-size: 20px;
+  font-size: 16px;
   color: #362e60;
 }
 .card-main {
