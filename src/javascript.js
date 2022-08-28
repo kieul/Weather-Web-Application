@@ -19,7 +19,7 @@ let days = [
   "Saturday",
 ];
 
-function fromat(timestamp) {
+function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
   let days = [
@@ -42,7 +42,7 @@ function displayForecast(response) {
   let forecastHTML = `<div class="row">`;
 
   forecast.forEach(function (forecastDay, index) {
-    if (index < 5) {
+    if (index < 4) {
       forecastHTML =
         forecastHTML +
         `  
@@ -53,7 +53,7 @@ function displayForecast(response) {
               forecastDay.weather[0].icon
             }@2x.png" 
             alt="" 
-            width="42"/>
+            width="75"/>
             <div class="degreein in-card">
               <span class="weather-forecast-temperature-max">${Math.round(
                 forecastDay.temp.max
@@ -87,7 +87,7 @@ function showWeather(response) {
   document.querySelector("#minTemperature").innerHTML = Math.round(
     response.data.main.temp_min
   );
-
+  getForecast(response.data.coord);
   celsiusTemperature = response.data.main.temp;
 }
 
