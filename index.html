@@ -15,6 +15,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
@@ -23,15 +24,13 @@
         <form class="searchBar" id="search-form">
           <div class="row">
             <div class="col-8">
-              <form id="search-form">
-                <input
-                  type="search"
-                  placeholder="Enter a city..."
-                  class="form-control"
-                  id="city-input"
-                  autocomplete="off"
-                />
-              </form>
+              <input
+                type="search"
+                placeholder="Enter a city..."
+                class="form-control"
+                id="city-input"
+                autocomplete="off"
+              />
             </div>
             <div class="col-4">
               <input type="submit" value="Search" class="submit-btn" />
@@ -48,7 +47,7 @@
         </form>
       </div>
       <br />
-      <form class="middle">
+      <div class="middle">
         <div class="row">
           <div class="col-6">
             <div class="float-left">
@@ -61,7 +60,6 @@
           </div>
           <div class="col-6">
             <h2 class="city" id="displayed-city"></h2>
-
             <h4 id="current-time"></h4>
             <h3 id="description">Mostly sunny</h3>
             <span id="maxTemperature"></span>
@@ -70,12 +68,13 @@
             <span id="maxTemperature">°C</span>
           </div>
         </div>
-      </form>
+      </div>
       <br />
       <div class="maincard" id="forecast"></div>
       <br />
       <small id="creator">
-        Coded and designed by
+        <a href="https://github.com/kieul/weather-app">Open-source code</a>
+        and design by
         <a href="https://www.linkedin.com/in/linh-kieu/" target="_blank"
           >Linh Kieu</a
         >
